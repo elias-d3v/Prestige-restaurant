@@ -1,0 +1,108 @@
+
+
+nav ul a:nth-child(3) {
+    border-color: #4c4343;
+    background-color: #4c4343;
+    color: white;
+}
+
+.menus {
+    text-align: center;
+}
+
+
+.menus p {
+    margin-bottom: 2rem;
+}
+
+.select-filter {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.center-filter {
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0;
+}
+
+.bg-dish {
+    background-color: #ebe3db;
+    padding: 2rem 1rem
+}
+
+.dish figure{
+    width: calc(50% - 2rem);
+    margin: 2rem 1rem;
+
+}
+
+.caption{
+    padding: 0;
+}
+
+.dish:last-child {
+    display: flex;
+    justify-content: center;
+}
+
+.dish img {
+    width: 100%;
+}
+
+.dish{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.caption img {
+    width: 2.5rem;
+    height: auto;
+}
+
+.border-hover {
+    align-items: center;
+}
+
+.active {
+    background-color: #950000!important;
+    color: #ebe3db!important;
+}
+
+.select-filter a {
+    background-color: #ebe3db;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.select-filter a:hover {
+    background-color: #950000;
+    color: #ebe3db;
+}
+
+
+.select-filter li {
+    display: inline-block;
+}
+
+@media screen and (min-width: 780px){
+    .select-filter {
+        width: 45%;
+    }
+
+    .dish figure{
+        width: calc(33% - 2rem);
+        margin: 2rem 1rem;
+    
+    }
+
+}
+
+@media screen and (min-width: 1100px){
+    .select-filter {
+        width: 25%;
+    }
+}

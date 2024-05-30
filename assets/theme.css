@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&display=swap');
+/* font-family: "Athiti"; */
+
+@import url('https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&family=Merienda:wght@300..900&display=swap');
+/* font-family: "Merienda"; */
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+body {
+    font-family: "Athiti";
+    font-size: 1.8rem;
+    font-weight: 500;
+    background: linear-gradient(180deg, #ebe3db 20px, white 100px);
+}
+
+body, h1, nav, ul, li, img, main, figure, h2, h3, p, figcaption, a, header, .slider{
+    margin: 0;
+    padding: 0;
+}
+
+header img {
+    width: 30%;
+    height: auto;
+}
+
+.header-top div {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: auto;
+    
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+h1 {
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+}
+
+h1::before, h2::before, h3::before {
+    content: "\2605";
+    color: #950000;
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+    vertical-align: bottom;
+}
+
+h1::after, h2::after, h3::after {
+    content: " \2605";
+    color: #950000;
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul a {
+    list-style-type: none;
+    text-transform: capitalize;
+    padding: 0.8rem;
+    border: 1px solid black;
+    width: 100%;
+    font-weight: 600;
+    background-color: #ebe3db;
+}
+
+h3, h2, .header-top figure{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+nav ul a:nth-child(1) {
+    border-bottom: none;
+}
+
+nav ul a:nth-child(2) {
+    border-bottom: none;
+}
+
+nav ul a:nth-child(3) {
+    border-bottom: none;
+}
+
+header nav {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+a:hover {
+    background-color: #950000;
+    color: #ebe3db;
+    border-color: #950000;
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: "Merienda";
+    text-align: center;
+    margin: 3rem 0 2rem 0;
+    width: 100%;
+}
+
+h3{
+    width: 100%;
+    font-size: 2rem;
+    font-family: "Merienda";
+    text-align: center;
+}
+
+main {
+    width: 95%;
+    margin: 2rem auto;
+}
+
+main img{
+    width: 100%;
+}
+
+footer {
+    background-image: url(../ressources/images/footer-bg.jpg);
+    background-size: cover;
+    padding: 4rem 1rem;
+}
+
+hr {
+    border: none;
+    border-bottom: 1px dashed #000;
+}
+
+
+
+
+/*              HOVER BORDER               */
+
+
+
+
+.caption:hover{
+    position: absolute;
+    background-color: rgba(76,67,67,.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.4rem;
+    color: white;
+    opacity: 1;
+    text-align: center;
+}
+
+.price {
+    font-size: 5rem;
+    margin: 0;
+}
+
+.price-description{
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.border-hover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: solid 3px white;
+    width: 90%;
+    height: 90%;
+    margin: auto;
+}
+
+
+
+.relative {
+    position: relative;
+}
+
+.caption {
+    position: absolute;
+    opacity: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+
+
+
+/*                FOOTER              */
+
+
+
+
+
+.infos-footer {
+    text-align: center;
+    color: white;
+    font-size: 1.6rem;
+}
+
+.infos-footer hr {
+    border: none;
+    border-bottom: 1px dashed white;
+}
+
+.about p:first-child {
+    font-family: "Merienda";
+    font-size: 1.8rem;
+}
+
+.social p:first-child {
+    font-family: "Merienda";
+    font-size: 1.8rem;
+}
+
+.about {
+    margin-bottom: 3rem;
+}
+
+.social i {
+    font-size: 3rem;
+    margin-top: 1rem;
+    margin-right: 2rem;
+}
+
+.social i:last-child{
+    margin-right: 0;
+}
+
+
+@media screen and (min-width: 780px){
+
+    h3, h2, .header-top figure{
+        display: flex;
+        align-items: center;
+    }
+
+    .header-top div{
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pre-navbar {
+        display: flex;
+        justify-content: space-around;
+        background-color: #ebe3db;
+    }
+
+    nav ul a {
+        width: auto;
+        list-style-type: none;
+        text-transform: capitalize;
+        border: none;
+        font-weight: 600;
+        background-color: #ebe3db;
+        padding: 0.8rem 1.5rem;
+    }
+
+    .infos-footer {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .about {
+        margin-bottom: 0rem;
+    }
+
+}
+
+
+@media screen and (min-width: 1100px){
+
+    .header-top div{
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        flex-wrap: nowrap;
+    }
+
+    .logotxt img{
+        margin-right: 2rem;
+    }
+
+    header, main {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    header {
+        width: 95%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        width: 90%;
+    }
+
+
+    .pre-navbar {
+        width: 75%;
+        display: flex;
+        justify-content: space-around;
+        background-color: unset;
+    }
+
+
+    header, main {
+        width: 80%;
+
+    }
+    
+    .infos-footer {
+        margin: 0 auto;
+        display: flex;
+        width: 65%;
+    }
+
+
+}
