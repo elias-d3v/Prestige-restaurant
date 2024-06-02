@@ -1,0 +1,129 @@
+nav ul a:nth-child(4) {
+    border-color: #4c4343;
+    background-color: #4c4343;
+    color: white;
+}
+
+.top-container h2 {
+    margin: 5rem auto 3rem auto;
+}
+
+.top-container {
+    text-align: center;
+}
+
+.obligatoire {
+    color: #950000;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+.mid-container {
+    margin: 3rem 0;
+    background-color: #ebe3db;
+    padding: 1.5rem 3.3rem 1.5rem 2.3rem;
+}
+
+.top-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-form .sous-cate{
+    width: calc(50% - 1rem);
+}
+
+.title-form {
+    font-size: 2rem;
+    font-family: "Merienda";
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.bottom-form {
+    margin: 3rem 0 2rem 1.1rem;
+}
+
+.bottom-form textarea {
+    width: 100%;
+    margin-top: 1rem;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+label::before{
+    content: '*';
+    color: #950000;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    margin-right: 0.3rem;
+}
+
+.sous-cate * {
+    width: 100%;
+}
+
+.sous-cate input {
+    margin-left: 1.1rem;
+    border-radius: 4px;
+    border: solid 1px black;
+    padding: 0.5rem;
+    max-height: 2.6rem;
+}
+
+.button-center{
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+button {
+    margin-left: 1.1rem;
+    width: 30%;
+    padding: 1rem 0;
+    border: none;
+    background-color: #4c4343;
+    color: #ebe3db;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #950000;
+}
+
+.bottom-container iframe {
+    width: 100%;
+}
+
+@media screen and (min-width: 780px){
+
+    .sous-cate input {
+        margin-left: 1.1rem;
+        border-radius: 4px;
+        border: solid 1px black;
+        padding: 1.5rem;
+    }
+
+    button {
+        width: 45%;
+        margin-bottom: 2rem;
+    }
+}
+
+
+@media screen and (min-width: 1100px){
+    .mid-container {
+        width: 50%;
+        margin: 3rem auto;
+    }
+
+    header, main {
+        width: 65%;
+        margin: 0 auto;
+    }
+
+    footer {
+        margin-top: 2rem;
+    }
+}

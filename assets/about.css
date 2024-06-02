@@ -1,5 +1,5 @@
 nav ul a:nth-child(2) {
-    border-bottom: #4c4343;
+    border: #4c4343;
     background-color: #4c4343;
     color: #ebe3db;
 }
@@ -16,5 +16,38 @@ p {
 
 .dining {
     background-color: #ebe3db;
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 1rem 0.1rem 1rem;
+    margin-bottom: 6rem;
+}
+
+.pic-dining {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 780px){  
+
+    .dining {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .pic-dining {
+        width: calc(50% - 10px);
+    }
+}
+
+@media screen and (min-width: 1100px){
+
+    video {
+        width: 70%;
+    }  
+
+    .dining {
+        width: 90%;
+        margin: 0 auto 6rem auto;
+    }
+
+
 }
