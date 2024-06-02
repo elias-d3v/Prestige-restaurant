@@ -118,12 +118,4 @@ button:hover {
         margin: 3rem auto;
     }
 
-    header, main {
-        width: 65%;
-        margin: 0 auto;
-    }
-
-    footer {
-        margin-top: 2rem;
-    }
 }
